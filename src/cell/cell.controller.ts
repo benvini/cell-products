@@ -32,3 +32,4 @@ export class CellController {
   allocateCell(@Body() allocateCellDto: AllocateCellDto) {
     return this.cellService.allocateCell(allocateCellDto);
   }
+}
