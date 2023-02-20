@@ -2,12 +2,12 @@ import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { UserModule } from '../user/user.module';
+import { CellModule } from '../cell/cell.module';
 import { LoggerMiddleware } from '../shared/middlewares/LoggerMiddleware';
 
 @Module({
   imports: [
-    UserModule,
+    CellModule,
     ConfigModule.forRoot({
       isGlobal: true,
     }),
